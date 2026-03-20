@@ -64,6 +64,18 @@ I build production-grade **ML systems**, **LLM pipelines**, and **cloud-native i
 
 ---
 
+## 🌟 ML/DevOps Open Source Ecosystem
+
+Repos I follow, study, and actively contribute to:
+
+| | | | |
+|---|---|---|---|
+| [🦙 ollama](https://github.com/harshadkhetpal/ollama) | [⚡ vllm](https://github.com/harshadkhetpal/vllm) | [🤖 dify](https://github.com/harshadkhetpal/dify) | [📊 mlflow](https://github.com/harshadkhetpal/mlflow) |
+| [☸️ kubeflow](https://github.com/harshadkhetpal/kubeflow) | [🔗 langchain](https://github.com/harshadkhetpal/langchain) | [☀️ ray](https://github.com/harshadkhetpal/ray) | [🌬️ airflow](https://github.com/harshadkhetpal/airflow) |
+| [🌊 prefect](https://github.com/harshadkhetpal/prefect) | [🤗 transformers](https://github.com/harshadkhetpal/transformers) | [⚛️ qiskit](https://github.com/harshadkhetpal/qiskit) | [🔗 n8n](https://github.com/harshadkhetpal/n8n) |
+
+---
+
 ## 🤝 Open Source Contributions
 
 Actively contributing bug fixes and improvements to popular ML/DevOps/Cloud projects:
