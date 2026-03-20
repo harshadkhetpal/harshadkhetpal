@@ -30,7 +30,7 @@ I build production-grade **ML systems**, **LLM pipelines**, and **cloud-native i
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
 **MLOps / DevOps**
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
@@ -60,7 +60,26 @@ I build production-grade **ML systems**, **LLM pipelines**, and **cloud-native i
 | [🚀 model-serving-triton](https://github.com/harshadkhetpal/model-serving-triton) | NVIDIA Triton — 10K QPS with TensorRT |
 | [☸️ kubernetes-ml-operator](https://github.com/harshadkhetpal/kubernetes-ml-operator) | Custom K8s Operator (Go) for ML workloads |
 | [✈️ data-pipeline-airflow](https://github.com/harshadkhetpal/data-pipeline-airflow) | Airflow 2.x ML pipelines + auto-retraining |
-| [🏗️ terraform-aws-ml-stack](https://github.com/harshadkhetpal/terraform-aws-ml-stack) | AWSML platform IaC (EKS + SageMaker + MLflow) |
+| [🏗️ terraform-aws-ml-stack](https://github.com/harshadkhetpal/terraform-aws-ml-stack) | AWS ML platform IaC (EKS + SageMaker + MLflow) |
+
+---
+
+## 🤝 Open Source Contributions
+
+Actively contributing bug fixes and improvements to popular ML/DevOps/Cloud projects:
+
+| Repository | Stars | My PR | Fix |
+|---|---|---|---|
+| [aws/sagemaker-python-sdk](https://github.com/aws/sagemaker-python-sdk) | ![](https://img.shields.io/github/stars/aws/sagemaker-python-sdk?style=flat-square&label=⭐) | [#5650](https://github.com/aws/sagemaker-python-sdk/pull/5650) | PEP 8: `== None` → `is None` |
+| [kubeflow/pipelines](https://github.com/kubeflow/pipelines) | ![](https://img.shields.io/github/stars/kubeflow/pipelines?style=flat-square&label=⭐) | [#13083](https://github.com/kubeflow/pipelines/pull/13083) | Fix bare `except:` in KFP client |
+| [PrefectHQ/prefect](https://github.com/PrefectHQ/prefect) | ![](https://img.shields.io/github/stars/PrefectHQ/prefect?style=flat-square&label=⭐) | [#21194](https://github.com/PrefectHQ/prefect/pull/21194) | Fix bare `except:` in flow engine |
+| [zenml-io/zenml](https://github.com/zenml-io/zenml) | ![](https://img.shields.io/github/stars/zenml-io/zenml?style=flat-square&label=⭐) | [#4634](https://github.com/zenml-io/zenml/pull/4634) | Fix bare `except:` in Kaniko builder |
+| [great-expectations/great_expectations](https://github.com/great-expectations/great_expectations) | ![](https://img.shields.io/github/stars/great-expectations/great_expectations?style=flat-square&label=⭐) | [#11735](https://github.com/great-expectations/great_expectations/pull/11735) | Fix bare `except:` |
+| [voxel51/fiftyone](https://github.com/voxel51/fiftyone) | ![](https://img.shields.io/github/stars/voxel51/fiftyone?style=flat-square&label=⭐) | [#7214](https://github.com/voxel51/fiftyone/pull/7214) | Fix bare `except:` |
+| [lablup/backend.ai](https://github.com/lablup/backend.ai) | ![](https://img.shields.io/github/stars/lablup/backend.ai?style=flat-square&label=⭐) | [#10350](https://github.com/lablup/backend.ai/pull/10350) | Fix bare `except:` |
+| [bcbio/bcbio-nextgen](https://github.com/bcbio/bcbio-nextgen) | ![](https://img.shields.io/github/stars/bcbio/bcbio-nextgen?style=flat-square&label=⭐) | [#3752](https://github.com/bcbio/bcbio-nextgen/pull/3752) | Update deprecated `collections` imports |
+
+> 🤖 Contributions are automated daily — real fixes to real bugs in production codebases.
 
 ---
 
@@ -68,4 +87,5 @@ I build production-grade **ML systems**, **LLM pipelines**, and **cloud-native i
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshadkhetpal&layout=compact&theme=default&hide_border=true)
 
 ---
+
 <sub>⚡ Passionate about production ML systems</sub>
