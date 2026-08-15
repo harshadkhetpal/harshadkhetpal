@@ -1,103 +1,67 @@
 <div align="center">
 
-# 👋 Hi, I'm Harshad Khetpal
+# Harshad Khetpal
 
-### MLOps · DevOps · Cloud · AI/ML Engineer
+### AI Engineer — production LLM systems, MLOps, multi-cloud platform engineering
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-harshadkhetpal-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/harshadkhetpal)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Harshad%20Khetpal-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/harshad-khetpal-38098499/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-harshadkhetpal.github.io-000?style=flat-square&logo=github)](https://harshadkhetpal.github.io)
-[![Email](https://img.shields.io/badge/Email-harshadkhetpal%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:harshadkhetpal@gmail.com)
+[![Email](https://img.shields.io/badge/Email-khetpalharsh%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khetpalharsh@gmail.com)
 
 </div>
 
----
-
-## 🚀 About Me
-
-I build production-grade **ML systems**, **LLM pipelines**, and **cloud-native infrastructure** that scales from prototype to millions of predictions per day.
-
-- 🔭 Building: LLM observability platforms & real-time feature stores
-- 🌱 Exploring: LoRA/QLoRA fine-tuning, multi-agent systems, vLLM inference
-- 💬 Ask me about: MLOps, Kubernetes, AWS, Terraform, LangChain, Ray
-- 📫 harshadkhetpal@gmail.com
+Close to 8 years building AI and platform systems that businesses run on — currently
+delivering production LLM, RAG and agent systems for enterprise clients including
+Boeing, T-Mobile and BCG. Open to relocation (UK, Europe, UAE).
 
 ---
 
-## 🛠 Tech Stack
+## Projects
 
-**ML / AI**
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+Each of these is a small, complete, tested system — clone any of them and it runs
+offline in one command, no API keys.
 
-**MLOps / DevOps**
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square)
-![DVC](https://img.shields.io/badge/DVC-945DD6?style=flat-square&logo=dvc&logoColor=white)
+### [llm-gateway](https://github.com/harshadkhetpal/llm-gateway)
+One API in front of many LLM providers: cheapest-first routing, response caching,
+automatic failover with circuit breaking, and a cost ledger that separates spend from
+spend avoided. *Why: most LLM spend is repeat prompts paid twice and easy prompts sent
+to expensive models.*
 
-**Cloud**
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+### [rag-eval-gate](https://github.com/harshadkhetpal/rag-eval-gate)
+Golden-set evaluation for RAG systems as a deterministic CI gate — a change that
+degrades answer quality fails the build the way a failing unit test does, and names
+the case that broke. *Why: the dangerous RAG failure is a fluent answer with the
+load-bearing fact missing.*
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+### [gpu-cost-exporter](https://github.com/harshadkhetpal/gpu-cost-exporter)
+Reads NVIDIA DCGM metrics and re-exports what utilisation graphs don't show: burn,
+**waste** (the idle share, in money) and cost per 1k inferences, as Prometheus
+metrics. *Why: a GPU at 4% utilisation is a calm green line on a dashboard and $0.97
+of every $1.01 on the bill.*
 
----
-
-## 📌 Featured Projects
-
-| Project | Description |
-|---|---|
-| [🦙 llm-fine-tuning-lora](https://github.com/harshadkhetpal/llm-fine-tuning-lora) | QLoRA fine-tuning for LLaMA-3 on a single GPU |
-| [🔍 vector-search-engine](https://github.com/harshadkhetpal/vector-search-engine) | Qdrant vs Weaviate benchmark — 1M vectors |
-| [🚀 model-serving-triton](https://github.com/harshadkhetpal/model-serving-triton) | NVIDIA Triton — 10K QPS with TensorRT |
-| [☸️ kubernetes-ml-operator](https://github.com/harshadkhetpal/kubernetes-ml-operator) | Custom K8s Operator (Go) for ML workloads |
-| [✈️ data-pipeline-airflow](https://github.com/harshadkhetpal/data-pipeline-airflow) | Airflow 2.x ML pipelines + auto-retraining |
-| [🏗️ terraform-aws-ml-stack](https://github.com/harshadkhetpal/terraform-aws-ml-stack) | AWS ML platform IaC (EKS + SageMaker + MLflow) |
+Each README has a **"Design decisions worth arguing with"** section — the trade-offs
+I'd defend in a review, written down.
 
 ---
 
-## 🌟 ML/DevOps Open Source Ecosystem
+## Day to day
 
-Repos I follow, study, and actively contribute to:
+**AI / LLM** — Python, FastAPI, LangChain, LangGraph, RAG, prompt engineering, golden-set
+evaluation; Amazon Bedrock, Anthropic Claude, OpenAI; vLLM-style serving concerns:
+continuous batching, KV-cache, quantization
 
-| | | | |
-|---|---|---|---|
-| [🦙 ollama](https://github.com/harshadkhetpal/ollama) | [⚡ vllm](https://github.com/harshadkhetpal/vllm) | [🤖 dify](https://github.com/harshadkhetpal/dify) | [📊 mlflow](https://github.com/harshadkhetpal/mlflow) |
-| [☸️ kubeflow](https://github.com/harshadkhetpal/kubeflow) | [🔗 langchain](https://github.com/harshadkhetpal/langchain) | [☀️ ray](https://github.com/harshadkhetpal/ray) | [🌬️ airflow](https://github.com/harshadkhetpal/airflow) |
-| [🌊 prefect](https://github.com/harshadkhetpal/prefect) | [🤗 transformers](https://github.com/harshadkhetpal/transformers) | [⚛️ qiskit](https://github.com/harshadkhetpal/qiskit) | [🔗 n8n](https://github.com/harshadkhetpal/n8n) |
+**MLOps & Data** — MLflow, Databricks, Airflow, PySpark, Kafka, dbt, BigQuery
 
----
+**Platform** — Kubernetes (AKS/EKS/GKE), Docker, Helm, Terraform, Ansible, GitOps
+(ArgoCD/Flux), Azure DevOps, GitHub Actions
 
-## 🤝 Open Source Contributions
-
-Actively contributing bug fixes and improvements to popular ML/DevOps/Cloud projects:
-
-| Repository | Stars | My PR | Fix |
-|---|---|---|---|
-| [aws/sagemaker-python-sdk](https://github.com/aws/sagemaker-python-sdk) | ![](https://img.shields.io/github/stars/aws/sagemaker-python-sdk?style=flat-square&label=⭐) | [#5650](https://github.com/aws/sagemaker-python-sdk/pull/5650) | PEP 8: `== None` → `is None` |
-| [kubeflow/pipelines](https://github.com/kubeflow/pipelines) | ![](https://img.shields.io/github/stars/kubeflow/pipelines?style=flat-square&label=⭐) | [#13083](https://github.com/kubeflow/pipelines/pull/13083) | Fix bare `except:` in KFP client |
-| [PrefectHQ/prefect](https://github.com/PrefectHQ/prefect) | ![](https://img.shields.io/github/stars/PrefectHQ/prefect?style=flat-square&label=⭐) | [#21194](https://github.com/PrefectHQ/prefect/pull/21194) | Fix bare `except:` in flow engine |
-| [zenml-io/zenml](https://github.com/zenml-io/zenml) | ![](https://img.shields.io/github/stars/zenml-io/zenml?style=flat-square&label=⭐) | [#4634](https://github.com/zenml-io/zenml/pull/4634) | Fix bare `except:` in Kaniko builder |
-| [great-expectations/great_expectations](https://github.com/great-expectations/great_expectations) | ![](https://img.shields.io/github/stars/great-expectations/great_expectations?style=flat-square&label=⭐) | [#11735](https://github.com/great-expectations/great_expectations/pull/11735) | Fix bare `except:` |
-| [voxel51/fiftyone](https://github.com/voxel51/fiftyone) | ![](https://img.shields.io/github/stars/voxel51/fiftyone?style=flat-square&label=⭐) | [#7214](https://github.com/voxel51/fiftyone/pull/7214) | Fix bare `except:` |
-| [lablup/backend.ai](https://github.com/lablup/backend.ai) | ![](https://img.shields.io/github/stars/lablup/backend.ai?style=flat-square&label=⭐) | [#10350](https://github.com/lablup/backend.ai/pull/10350) | Fix bare `except:` |
-| [bcbio/bcbio-nextgen](https://github.com/bcbio/bcbio-nextgen) | ![](https://img.shields.io/github/stars/bcbio/bcbio-nextgen?style=flat-square&label=⭐) | [#3752](https://github.com/bcbio/bcbio-nextgen/pull/3752) | Update deprecated `collections` imports |
-
-> 🤖 Contributions are automated daily — real fixes to real bugs in production codebases.
+**Observability & Reliability** — Prometheus, Grafana, OpenTelemetry, SLOs, on-call,
+incident response; GDPR / ISO 27001 audit experience
 
 ---
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=harshadkhetpal&show_icons=true&theme=default&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshadkhetpal&layout=compact&theme=default&hide_border=true)
+<div align="center">
 
----
+📫 **khetpalharsh@gmail.com** · Open to AI Engineer / MLOps / Platform roles with visa sponsorship (UK · Europe · UAE)
 
-<sub>⚡ Passionate about production ML systems</sub>
+</div>
