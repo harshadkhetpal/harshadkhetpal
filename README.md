@@ -18,26 +18,26 @@ Boeing, T-Mobile and BCG. Open to relocation (UK, Europe, UAE).
 
 ## Projects
 
-Each of these is a small, complete, tested system — clone any of them and it runs
-offline in one command, no API keys.
+Each is a small, complete, tested system — clone any of them and it runs offline in
+one command, no API keys, CI green.
 
-### [llm-gateway](https://github.com/harshadkhetpal/llm-gateway)
-One API in front of many LLM providers: cheapest-first routing, response caching,
-automatic failover with circuit breaking, and a cost ledger that separates spend from
-spend avoided. *Why: most LLM spend is repeat prompts paid twice and easy prompts sent
-to expensive models.*
+**AI / LLM Serving**
+- [llm-gateway](https://github.com/harshadkhetpal/llm-gateway) — one API over many LLM providers: cheapest-first routing, caching, failover with circuit breaking, cost ledger
+- [llm-batch-sim](https://github.com/harshadkhetpal/llm-batch-sim) — discrete-event simulation quantifying why continuous batching beats naive serving (6x throughput, 9x lower p95 on the demo workload)
 
-### [rag-eval-gate](https://github.com/harshadkhetpal/rag-eval-gate)
-Golden-set evaluation for RAG systems as a deterministic CI gate — a change that
-degrades answer quality fails the build the way a failing unit test does, and names
-the case that broke. *Why: the dangerous RAG failure is a fluent answer with the
-load-bearing fact missing.*
+**AI Quality & Machine Learning**
+- [rag-eval-gate](https://github.com/harshadkhetpal/rag-eval-gate) — golden-set RAG evaluation as a deterministic CI gate; a change that degrades answers fails the build and names the case
+- [ml-train-gate](https://github.com/harshadkhetpal/ml-train-gate) — reproducible training (logistic regression from first principles), metric-regression gates on AUC/recall, generated model cards
 
-### [gpu-cost-exporter](https://github.com/harshadkhetpal/gpu-cost-exporter)
-Reads NVIDIA DCGM metrics and re-exports what utilisation graphs don't show: burn,
-**waste** (the idle share, in money) and cost per 1k inferences, as Prometheus
-metrics. *Why: a GPU at 4% utilisation is a calm green line on a dashboard and $0.97
-of every $1.01 on the bill.*
+**MLOps**
+- [drift-watch](https://github.com/harshadkhetpal/drift-watch) — input drift detection as a pipeline gate: PSI with baseline-quantile bins + KS distance, unseen categories treated as maximum signal
+
+**DevOps / IaC**
+- [tf-plan-guard](https://github.com/harshadkhetpal/tf-plan-guard) — policy gate over `terraform plan`: blocks destroys *and replaces* of protected resources before the apply
+
+**SRE / Observability**
+- [slo-burn](https://github.com/harshadkhetpal/slo-burn) — error-budget arithmetic + generated multiwindow burn-rate Prometheus alerts (Google SRE Workbook policy, auto-scaled to your window)
+- [gpu-cost-exporter](https://github.com/harshadkhetpal/gpu-cost-exporter) — NVIDIA DCGM metrics re-exported as money: burn, waste (the idle share, in dollars), cost per 1k inferences
 
 Each README has a **"Design decisions worth arguing with"** section — the trade-offs
 I'd defend in a review, written down.
