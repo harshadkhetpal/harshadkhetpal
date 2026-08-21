@@ -25,7 +25,15 @@ one command, no API keys, CI green.
 - [llm-gateway](https://github.com/harshadkhetpal/llm-gateway) — one API over many LLM providers: cheapest-first routing, caching, failover with circuit breaking, cost ledger
 - [llm-batch-sim](https://github.com/harshadkhetpal/llm-batch-sim) — discrete-event simulation quantifying why continuous batching beats naive serving (6x throughput, 9x lower p95 on the demo workload)
 
+**RAG & Retrieval**
+- [rag-chunk-lab](https://github.com/harshadkhetpal/rag-chunk-lab) — chunking strategy vs retrieval quality, measured: BM25 from scratch, golden-set eval, the boundary-loss effect pinned as a test
+- [vector-index-lab](https://github.com/harshadkhetpal/vector-index-lab) — exact and IVF vector search from first principles, with the recall-vs-probes trade-off every vector DB sells, measured
+
+**Agents & MCP**
+- [mini-mcp](https://github.com/harshadkhetpal/mini-mcp) — the Model Context Protocol tools subset from first principles: server, client and the JSON-RPC mechanics between them, in ~200 readable lines
+
 **AI Quality & Machine Learning**
+- [lora-lab](https://github.com/harshadkhetpal/lora-lab) — LoRA fine-tuning mechanics from first principles in NumPy: exact merging, frozen-base guarantees and rank trade-offs, all pinned as tests
 - [rag-eval-gate](https://github.com/harshadkhetpal/rag-eval-gate) — golden-set RAG evaluation as a deterministic CI gate; a change that degrades answers fails the build and names the case
 - [ml-train-gate](https://github.com/harshadkhetpal/ml-train-gate) — reproducible training (logistic regression from first principles), metric-regression gates on AUC/recall, generated model cards
 
