@@ -26,6 +26,7 @@ one command, no API keys, CI green.
 - [llm-batch-sim](https://github.com/harshadkhetpal/llm-batch-sim) — discrete-event simulation quantifying why continuous batching beats naive serving (6x throughput, 9x lower p95 on the demo workload)
 
 **RAG & Retrieval**
+- [rag-fusion-lab](https://github.com/harshadkhetpal/rag-fusion-lab) — hybrid retrieval measured: BM25 vs char-trigram vectors vs RRF fusion, with each retriever's failure mode isolated per query flavor
 - [rag-chunk-lab](https://github.com/harshadkhetpal/rag-chunk-lab) — chunking strategy vs retrieval quality, measured: BM25 from scratch, golden-set eval, the boundary-loss effect pinned as a test
 - [vector-index-lab](https://github.com/harshadkhetpal/vector-index-lab) — exact and IVF vector search from first principles, with the recall-vs-probes trade-off every vector DB sells, measured
 
@@ -33,6 +34,7 @@ one command, no API keys, CI green.
 - [mini-mcp](https://github.com/harshadkhetpal/mini-mcp) — the Model Context Protocol tools subset from first principles: server, client and the JSON-RPC mechanics between them, in ~200 readable lines
 
 **AI Quality & Machine Learning**
+- [forgetting-lab](https://github.com/harshadkhetpal/forgetting-lab) — catastrophic forgetting reproduced from first principles: naive fine-tuning drops task A from 99% to 56%, L2 anchoring and replay measured against it
 - [lora-lab](https://github.com/harshadkhetpal/lora-lab) — LoRA fine-tuning mechanics from first principles in NumPy: exact merging, frozen-base guarantees and rank trade-offs, all pinned as tests
 - [rag-eval-gate](https://github.com/harshadkhetpal/rag-eval-gate) — golden-set RAG evaluation as a deterministic CI gate; a change that degrades answers fails the build and names the case
 - [ml-train-gate](https://github.com/harshadkhetpal/ml-train-gate) — reproducible training (logistic regression from first principles), metric-regression gates on AUC/recall, generated model cards
