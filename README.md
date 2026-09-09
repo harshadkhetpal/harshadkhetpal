@@ -30,7 +30,8 @@ one command, no API keys, CI green.
 - [rag-chunk-lab](https://github.com/harshadkhetpal/rag-chunk-lab) — chunking strategy vs retrieval quality, measured: BM25 from scratch, golden-set eval, the boundary-loss effect pinned as a test
 - [vector-index-lab](https://github.com/harshadkhetpal/vector-index-lab) — exact and IVF vector search from first principles, with the recall-vs-probes trade-off every vector DB sells, measured
 
-**Agents & MCP**
+**Agents, MCP & Agent Security**
+- [toolgate](https://github.com/harshadkhetpal/toolgate) — a policy firewall and tamper-evident audit log for AI agent tool calls: deny by default, rate limits, budgets, hash-chained history that names the exact tampered entry
 - [mini-mcp](https://github.com/harshadkhetpal/mini-mcp) — the Model Context Protocol tools subset from first principles: server, client and the JSON-RPC mechanics between them, in ~200 readable lines
 
 **AI Quality & Machine Learning**
